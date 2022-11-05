@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background: #D6E1FF;
+    height: 100vh;
+    display: flex;
+}
+
+.card {
+    margin: auto;
+    background-color: #fff;
+    width: 480px;
+    border-radius: 20px;
+
+}
+
+.header {
+    width: 480px;
+    height: 220px;
+    background: url(images/illustration-hero.svg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.content {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.content p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    opacity: .6;
+}
+
+.mini-card {
+    margin-top: 30px;
+    background-color: rgba(139, 138, 138, 0.1);
+    border-radius: 30px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-card-content {
+    margin: 0 30px;
+}
+
+
+.mini-card a {
+    text-decoration: none;
+    color: blue;
+    transition: all .3s ease;
+}
+
+.mini-card a:hover {
+    color: rgb(86, 86, 88);
+}
+
+.options {
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 14px 100px;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
+    opacity: .8;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.options a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgba(3, 3, 3, .5);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+
+.options a:hover {
+    color: rgba(3, 3, 3, 1);
+}
+
+@media all and (max-width: 375px) {
+    html{
+        font-size: 12px;
+    }
+
+    .content {
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .header {
+        width: 280px;
+    }
+
+    .mini-card {
+        padding: 10px 0;
+    }
+    
+    .mini-card-content {
+        margin: 0 20px;
+    }
+
+    .btn {
+        padding: 14px 50px;
+    }
+}

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.options ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+.options ul li a {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.options ul li a:hover {
+    color: blue;
+    border: 1px solid #333;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.container .card-1 {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.container .card-1 .left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container .card-1 .left p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.container .card-1 .left input {
+    font-size: 1rem;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.container .card-1 .left button {
+    font-size: 1rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+}
+
+.container .card-1 .right img {
+    width: 100%;
+}
+
+.container .card-2 {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 50px;
+}
+
+.container .card-2 .left h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container .card-2 .left p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.container .card-2 .left a {
+    color: hsl(170, 45%, 43%);
+}
+
+.container .card-2 .left .subcard {
+    margin-top: 20px;
+    padding: 20px 30px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    background-color: #fff;
+    width: 50%;
+}
+
+.container .card-2 .left .subcard .profil {
+    border-radius: 50%;
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+}
+
+.container .card-2 .left .subcard .name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.container .card-2 .right img {
+    width: 100%;
+}
+
+.footer .card-1 {
+    background-color: hsl(238, 22%, 44%);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.footer .card-1 .left{
+    width: 50%;
+}
+
+.footer .card-1 .left h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer .card-1 .left p{
+    width: 70%;
+    opacity: .7;
+}
+
+.footer .card-1 .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .card-1 .right input{
+    padding: 16px 40px;
+    margin-bottom: 20px;
+}
+
+.footer .card-1 .right button{
+    padding: 16px 40px;
+    border-radius: 10px;
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border: none;
+}
+
+.footer .card-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    color: #fff;
+    background-color: hsl(243, 87%, 12%);
+}
+
+.footer .card-2 p{
+    margin-bottom: 10px;
+}
+
+.footer .card-2 li{
+    margin-bottom: 6px;
+}
+
+.footer .card-2 li a{
+    color: #fff;
+}
+
+.footer .card-2 .right ul{
+    display: flex;
+    column-gap: 30px;
+}
+
+.footer .card-2 .right ul li a{
+    font-size: 30px;
+}
+
+
+@media(max-width:375px){
+
+    body{
+        font-size: 12px;
+    }
+
+    .nav {
+        padding: 14px;
+    }
+
+    .nav img{
+        width: 70%;
+    }
+
+    .options ul {
+        column-gap: 20px;
+    }
+    
+    .options ul li a {
+        font-size: 1rem;
+    }
+
+    .container .card-1 {
+        padding: 20px 40px;
+        flex-direction: column-reverse;
+    }
+
+    .container .card-2 {
+        flex-direction: column-reverse;
+    }
+
+    .container .card-2 .left .subcard {
+        width: 100%;
+    }
+
+    .footer .card-1 {
+        flex-direction: column;
+    }
+
+    .footer .card-1 .left{
+        width: 100%;
+    }
+
+    .footer .card-1 .left p{
+        margin-bottom: 10px;
+    }
+
+    .footer .card-2 {
+        flex-direction: column;
+    }
+
+    .footer .card-2 .left{
+        margin: 10px 0;
+    }
+
+    .footer .card-2 .mid-right{
+        margin-bottom: 10px;
+    }
+}

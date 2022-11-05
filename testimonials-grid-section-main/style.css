@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(0, 0%, 81%);
+    color: #fff;
+}
+
+.cards {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card img {
+    border-radius: 50%;
+    border: 1px solid white;
+    float: left;
+}
+
+.card h5 {
+    margin: 10px 0 0 70px;
+}
+
+.card .domain {
+    margin-left: 65px;
+}
+
+.card h2 {
+    clear: both;
+    margin-top: 40px;
+}
+
+.card .para {
+    margin-top: 20px;
+    opacity: .6;
+}
+
+.card-1 {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.card-2 {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card-3 {
+    background-color: white;
+    color: black;
+}
+
+.card-4 {
+    background-color: hsl(219, 29%, 14%);
+}
+
+.card-5 {
+    background-color: white;
+    color: black !important;
+}
+
+
+
+@media(min-width:376px) {
+
+    .cards {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        max-width: 1400px;
+        max-height: 800px;
+        margin-top: 75px;
+    }
+
+    .card {
+        position: absolute;
+        height: 330px;
+    }
+
+    .card-1 {
+        width: 600px;
+        left: 0;
+        top: 0;
+    }
+
+    .card-2 {
+        width: 400px;
+        right: 350px;
+        top: 0;
+    }
+
+    .card-3 {
+        width: 300px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .card-4 {
+        width: 700px;
+        bottom: 0;
+        right: 350px;
+    }
+
+    .card-5 {
+        right: 0;
+        top: 100px;
+        width: 300px;
+        height: 600px !important;
+    }
+
+}

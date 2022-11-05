@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    width: 75%;
+}
+
+.col-1{
+    padding: 50px 100px;
+}
+
+.col-1 h1{
+    font-size: 3rem;
+}
+
+.col-1 h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.col-1 p{
+    margin-top: 20px;
+    font-size: 1.3rem;
+    line-height: 26px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    opacity: .7;
+    margin-bottom: 20px;
+}
+
+
+.bottom{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px;
+}
+
+.yazi{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.alt-yazi{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    opacity: .6;
+}

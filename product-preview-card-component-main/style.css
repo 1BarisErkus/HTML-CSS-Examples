@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+section {
+    height: calc(100vh - 12px);
+    /* overflow: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 1000px;
+    display: flex;
+    flex-basis: 50%;
+}
+
+img {
+    width: 400px;
+}
+
+.content {
+    padding: 20px;
+}
+
+h5 {
+    font-size: 1.3rem;
+    opacity: 0.3;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.7rem;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.newPrice {
+    color: green;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-right: 20px;
+}
+
+.oldPrice {
+    opacity: 0.5;
+    text-decoration: line-through;
+    font-size: 1.4rem;
+}
+
+.btn {
+    display: block;
+    margin-top: 30px;
+
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    transition: all .3s ease;
+    font-weight: bold;
+    width: 420px;
+    height: 50px;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+svg {
+    margin-right: 10px;
+}
+
+@media all and (max-width: 375px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .card {
+        width: 300px;
+        flex-basis: 0;
+        position: relative;
+    }
+
+
+    img {
+        content: url(images/image-product-mobile.jpg);
+        position: absolute;
+        width: 100%;
+    }
+
+    .content {
+        width: 300px;
+        margin-top: 200px;
+    }
+
+    .btn {
+        width: 240px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+
+
+}

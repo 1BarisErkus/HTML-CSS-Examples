@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+.card{
+    width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    height: 200px;
+}
+
+.card-content img{
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-top: -50px;
+    margin-bottom: 16px;
+}
+
+.card-content h1{
+    opacity: .8;
+}
+
+.card-content span{
+    opacity: .4;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    opacity: .7;
+}
+
+hr{
+    margin: 30px 0;
+    opacity: .4;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-footer p{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.card-footer span{
+    opacity: .6;
+}
+
+@media all and (max-width:375px){
+
+    .card{
+        width: 300px;
+    }
+
+    .card-header{
+        height: 150px;
+    }
+
+}

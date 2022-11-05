@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 1200px;
+}
+
+.card{
+    padding: 40px 30px;
+    height: 470px;
+    max-width: 300px;
+}
+
+.card h1{
+    font-size: 2.6rem;
+    margin-top: 26px;
+}
+
+.card p{
+    font-size: 1.3rem;
+    margin-top: 26px;
+    opacity: .8;
+    letter-spacing: 1px;
+    line-height: 24px;
+    word-spacing: 1px;
+}
+
+.card button{
+    margin-top: 40px;
+    padding: 18px 50px;
+    border-radius: 30px;
+    border: #fff;
+}
+
+.card button:hover{
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card-1 .btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-2 .btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card-3 .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+@media all and (max-width:375px){
+    body{
+        height: 100%;
+    }
+    
+    .container{
+        flex-direction: column;
+        margin: 50px 0;
+    }
+}

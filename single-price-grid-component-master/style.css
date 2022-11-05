@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    height: 100vh;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card-1{
+    background-color: white;
+    padding: 20px;
+}
+
+.card-1 h1{
+    color: hsl(179, 62%, 43%);
+}
+
+.card-1 h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: hsl(71, 73%, 54%);
+}
+
+.card-1 p{
+    font-size: 1.3rem;
+    opacity: .6;
+}
+
+.card-2{
+    display: flex;
+    color: #fff;
+}
+
+.card-2 .sub-card-1{
+    background-color: hsl(179, 62%, 43%);
+    padding: 20px;
+    width: 100%;
+}
+
+.card-2 .sub-card-1 .dollar{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.card-2 .sub-card-1 .dollar span{
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: .6;
+}
+
+.card-2 .sub-card-1 p, .sub-card-2 p{
+    margin-top: 10px;
+}
+
+.card-2 .sub-card-1 button{
+    margin-top: 20px;
+    padding: 10px 44px;
+    background-color: hsl(71, 73%, 54%);;
+    color: #fff;
+    border: none;
+}
+
+.card-2 .sub-card-2{
+    background-color: hsl(218, 22%, 67%);
+    padding: 20px;
+}
+
+
+
+@media all and (max-width:375px){
+
+    .container{
+        max-width: 300px;
+        margin: 50px auto;
+    }
+
+    .card-2{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(bg.jpg);
+    overflow: hidden;
+}
+
+/* navbar start */
+
+.navbar{
+    display: flex;
+    background: rgba(22, 112, 214, 0.4);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar h2{
+    font-weight: 700;
+    font-size: 30px;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    column-gap: 20px;
+}
+
+.navbar ul li a{
+    color: #fff;
+    padding: 6px 13px;
+}
+
+.active, .navbar ul li a:hover{
+    background: #ff6e00;
+    border-radius: 20px;
+}
+
+.burger{
+    display: none;
+    padding: 20px;
+}
+
+.line-1,
+.line-2,
+.line-3{
+    width: 24px;
+    height: 3px;
+    background-color: #eee;
+}
+
+.line-2{
+    margin: 3px 0;
+}
+
+/* navbar end */
+
+/* conent start */
+
+.content {
+    text-align: center;
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 300px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+    color: gray;
+}
+
+.content span{
+    display: block;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.content input{
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .15s ease-in;
+    cursor: pointer;
+}
+
+.content input:hover{
+    background: orangered;
+}
+
+/* conent end */
+
+
+@media(max-width:375px){
+    .content{
+        margin-top: -100px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content input{
+        padding: 16px;
+        width: 240px;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    ul{
+        position: absolute;
+        top: 74px;
+        right: 0;
+        width: 60%;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: rgba(22, 112, 214, 0.4);
+    }
+}

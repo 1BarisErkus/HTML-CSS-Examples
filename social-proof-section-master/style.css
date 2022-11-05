@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    align-items: center;
+    height: 100%;
+}
+
+.main-card-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.main-card-1 .sub-card-1 {
+    max-width: 50%;
+}
+
+.main-card-1 .sub-card-1 h1 {
+    font-size: 4.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.main-card-1 .sub-card-1 p {
+    margin-top: 30px;
+    font-size: 1.4rem;
+    opacity: .7;
+    max-width: 80%;
+}
+
+.main-card-1 .sub-card-2 {
+    margin-left: 10%;
+    width: 470px;
+}
+
+.main-card-1 .sub-card-2 .bgs {
+    background-color: hsl(300, 24%, 96%);
+    margin: 20px 0;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+    max-width: 340px;
+}
+
+.main-card-1 .sub-card-2 .subs-card-2 {
+    margin-left: 50px;
+}
+
+.main-card-1 .sub-card-2 .subs-card-3 {
+    margin-left: 100px;
+}
+
+.main-card-1 .sub-card-2 p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+
+
+.main-card-2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-card-2 .bg {
+    background-color: hsl(300, 43%, 22%);
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 300px;
+    padding: 20px;
+}
+
+.main-card-2 img {
+    border-radius: 50%;
+    float: left;
+}
+
+.main-card-2 h3{
+    margin: 16px 0 0 100px;
+    font-size: 1.6rem;
+}
+
+.main-card-2 .job{
+    margin: 6px 0 0 100px;
+    font-size: 1.2rem;
+    color: hsl(333, 80%, 67%);
+}
+
+.para{
+    margin-top: 50px;
+    font-size: 1.3rem;
+    clear: both;
+}
+
+.main-card-2 .sub-card-2{
+    margin-top: 60px;
+}
+
+.main-card-2 .sub-card-3{
+    margin-top: 120px;
+}
+
+
+
+@media all and (max-width:375px){
+
+    html{
+        font-size: 12px;
+    }
+
+    .container{
+        margin: 50px 0;
+        overflow-x: hidden;
+    }
+
+    .main-card-1{
+        flex-direction: column;
+    }
+
+    .main-card-1 .sub-card-2 {
+        margin-left: 120px;
+    }
+
+    .main-card-1 .sub-card-2 .subs-card-2 {
+        margin-left: 0;
+    }
+    
+    .main-card-1 .sub-card-2 .subs-card-3 {
+        margin-left: 0;
+    }
+
+    .main-card-2{
+        flex-direction: column;
+    }
+
+    .main-card-2 .sub-card-2{
+        margin-top: 30px;
+    }
+    
+    .main-card-2 .sub-card-3{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+}

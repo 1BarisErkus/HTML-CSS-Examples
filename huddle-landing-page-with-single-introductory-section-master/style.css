@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    color: #fff;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-basis: 50%;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.content{
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+.content h1{
+    font-size: 4rem;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    opacity: .8;
+}
+
+.content button{
+    margin-top: 30px;
+    padding: 16px 60px;
+    border-radius: 30px;
+    border: 2px solid hsl(257, 40%, 49%);
+    color: hsl(257, 40%, 49%);
+    font-size: 1.1rem;
+    transition: all .3s ease;
+}
+
+.content button:hover{
+    background-color: rgba(221, 93, 238, 0.5);
+    color: #fff;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer ul{
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+    position: absolute;
+    right: 30px;
+}
+
+.footer ul li a{
+    font-size: 3rem;
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.footer ul li a:hover{
+    color: rgba(221, 93, 238, 0.5);
+}
+
+
+@media all and (max-width: 375px){
+
+    html{
+        font-size: 12px;
+    }
+
+    body{
+        background-image: url(images/bg-mobile.svg);
+        overflow: auto;
+    }
+
+    .container{
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .content button{
+        margin-top: 20px;
+        padding: 12px 50px;
+    }
+
+    .footer ul{
+        column-gap: 20px;
+        right: 35%;
+    }
+
+    .footer ul li a{
+        font-size: 2.4rem;
+    }
+}
